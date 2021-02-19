@@ -1,0 +1,135 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+
+      /* background-color: #00adb5; */
+
+
+}
+.navbar-nav li {
+  color: black !important;
+}
+ .navbar-nav  li a:hover {
+    color: #00adb5 !important;
+}
+
+.home_heading{
+  /* font-family: 'Montserrat', sans-serif;
+  font-size: 4rem; */
+  padding-bottom: 20px;
+}
+.nn{
+  color: black;
+}
+
+.homediv{
+   padding: 4rem 0 8rem;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  background-color: #00adb5;
+ /* background-image: url(../images/home.jpg); */
+
+}
+
+
+.homehref{
+  color: black;
+  font-size: 20px;
+}
+a:hover{
+  color: white ;
+}
+a:link{
+  text-decoration: none;
+}
+.home{
+  text-align: center;
+  margin: 0;
+  width:100%;
+}
+.homeimg{
+  text-align: center;
+ height:100vh;
+ width: 100%;
+ margin: 0;
+
+}
+.homei{
+  margin-bottom: 20px;
+}
+.footer {
+
+  margin: 0;
+	text-align: center;
+	/* bottom: 0; */
+	width: 100%;
+	height: 70px;
+	background-color: #247291;
+/* padding-bottom: 5rem; */
+}
+
+
+.footer p {
+	/* margin-top: 25px; */
+  padding-top: 25px;
+  /* padding-bottom: 6rem; */
+
+	font-size: 15px;
+  color: #fff;
+}
+/* users css */
+/* .users{
+  background-color: #f38181;
+
+} */
+.table{
+  text-align: center;
+}
+.userh{
+  text-align: center;
+  padding: 7rem ;
+  background-color: #3282b8;
+  color: #fff;
+}
+.userdata{
+  text-align: center;
+  margin-top: 4% ;
+font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.text-center{
+
+  font-weight: bold !important;
+  font-size: 19px !important;
+}
+.center{
+  padding-bottom: 1% !important;
+  padding-top: 1% !important;
+  font-size: 15px !important;
+}
+.dropdown{
+  text-align: left;
+  margin-bottom: 8rem;
+}
+.dropdownlist{
+  width: 100% !important;
+  height:28% !important;
+  margin-bottom: 3rem;
+}
+/* .TH{
+  padding-bottom: 6rem !important;
+} */

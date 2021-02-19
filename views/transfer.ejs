@@ -1,0 +1,71 @@
+<%- include('partials/header'); -%>
+<div class="container-fluid userh ">
+<h1>Just a few steps away!!</h1>
+</div>
+<div class="container userdata">
+  <table class="table table-hover">
+    <thead class="thead-dark TH">
+      <tr>
+        <th  class="text-center" scope="col">User ID</th>
+        <th  class="text-center" scope="col">NAME</th>
+        <th class="text-center" scope="col">EMAIL</th>
+        <th class="text-center" scope="col">ACCOUNT BALANCE</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+               <!-- <th scope="row" class="center "></th> -->
+             <td class="center  "><%=sender.userid%></td>
+            <td class="center " name="sender"><%=sender.name%></td>
+           <td class="center "><%=sender.email%></td>
+           <td class="center "><%=sender.balance%></td>
+          </tr>
+    </tbody>
+  </table>
+  <div class="dropdown  ">
+    <form  action="/transaction" method="post">
+         <label > SEND TO :</label>
+         <br>
+
+
+
+          <select class="form-select form-select-lg lg-3 dropdownlist" aria-label=".form-select-lg example" name="receiver" required>
+        <option  disabled selected placeholder="TRANSFER MONEY"></option>
+      <%  for(var i=0;i<list.length;i++){%>
+      <%    if(list[i].name!=sender.name){%>
+
+            <option value="<%=list[i].name%>" ><%=list[i].name%> ( Cur. Bal:<%=list[i].balance%>)</option>
+          <%};%>
+      <%  };%>
+      </select>
+      <label > AMOUNT</label>
+      <input type="number" class="dropdownlist" name="amount" required>
+      <button type="submit" onclick="click()"  class="btn btn-info">SEND</button>
+
+    </form>
+  </div>
+
+</div>
+<script>
+$( "form" ).submit(function( event ) {
+   alert("The paragraph was clicked.");
+    return;
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer'); -%>

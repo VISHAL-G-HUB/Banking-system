@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+<div class="container-fluid userh ">
+<h1>Transfer Money to your Loved One's!!</h1>
+</div>
+<div class="container-fluid">
+  <div class="container userdata">
+  <table class="table table-hover">
+    <thead class="thead-dark TH">
+      <tr>
+        <th  class="text-center" scope="col">User ID</th>
+        <th  class= "text-center" scope="col">NAME</th>
+        <th class= "text-center" scope="col">EMAIL</th>
+        <th class= "text-center" scope="col">ACCOUNT BALANCE</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <%  for(var i=0;i<list.length;i++){ %>
+
+          <tr>
+           <!-- <th scope="row" class="center "></th> -->
+             <td class="center "><%=list[i].userid%></td>
+            <td class="center "><%=list[i].name%></td>
+           <td class="center "><%=list[i].email%></td>
+           <td class="center "><%=list[i].balance%></td>
+
+            <td class="center py-2">
+              <form action="/transfer" method="post">
+                <button type="submit" name="transferbtn" class="btn btn-info" value=<%=list[i].name%>>TRANSFER MONEY</button>
+              </form>
+              </td>
+          </tr>
+
+      <%  };%>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+
+
+
+<%- include('partials/footer'); -%>
