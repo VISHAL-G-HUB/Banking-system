@@ -82,7 +82,7 @@ const h =new Person({
 Person.find({},function(er,foundItems){
   if(!er)
   {
-      if(!foundItems)
+      if(foundItems.length===0)
     {
       Person.insertMany(arr,function(err){
         if(!err)
