@@ -9,7 +9,7 @@ h1{
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 0;
+    border: 2;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 14px;
@@ -23,7 +23,7 @@ h1{
   color: black !important;
 }
  .navbar-nav  li a:hover {
-    color: #00adb5 !important;
+    color: #d34d0e !important;
 }
 
 .home_heading{
@@ -102,7 +102,7 @@ a:link{
 .userh{
   text-align: center;
   padding: 7rem ;
-  background-color: #3282b8;
+  background-color: red;
   color: #fff;
 }
 .userdata{

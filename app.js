@@ -30,15 +30,15 @@ const Person=mongoose.model("Person",bankingSchema);
 // add data
 const a =new Person({
   userid:1,
-  name:"Utkarsh",
-  email:"utkarsh@gmail.com",
-  balance: 110000
+  name:"Vishal",
+  email:"vishal@gmail.com",
+  balance: 315000
 });
 const b =new Person({
   userid:2,
-  name:"Vishal",
-  email:"vishal@gmail.com",
-  balance: 215000
+  name:"shubham",
+  email:"shubham@gmail.com",
+  balance: 200000
 });
 const c =new Person({
   userid:3,
@@ -48,9 +48,9 @@ const c =new Person({
 });
 const d =new Person({
   userid:4,
-  name:"Upasak",
-  email:"upasak@gmail.com",
-  balance: 150500
+  name:"Tushar",
+  email:"Tushar@gmail.com",
+  balance: 120000
 });
 const e =new Person({
   userid:5,
@@ -60,9 +60,9 @@ const e =new Person({
 });
 const f =new Person({
   userid:6,
-  name:"Tushar",
-  email:"tushar@gmail.com",
-  balance: 198000
+  name:"siddhant",
+  email:"siddhant@gmail.com",
+  balance: 199000
 });
 const g =new Person({
   userid:7,
