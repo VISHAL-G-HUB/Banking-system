@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 mongoose.connect("mongodb+srv://utkarsh:task101@cluster0.hhpvd.mongodb.net/bankingDB",{useNewUrlParser:true});
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
-// schema
+// schema check
 const bankingSchema ={
   userid:Number,
   name:String,
